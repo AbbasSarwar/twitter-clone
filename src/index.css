@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root {
+    display: flex;
+    flex: row;
+    height: 100%;
+    --btn-bg: #e7e7e8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.widget {
+    position: sticky;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+}
+
+.sidebar a:hover {
+    background-color: var(--btn-bg);
+    border-radius: 50%;
+}
+
+.menu {
+    padding: 10px 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feed {
+    overflow-y: scroll;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-text {
+    display: none;
+}
+
+.icon {
+   display: flex;
+   font-weight: bolder;
+}
+
+@media only screen and (min-width: 1281px) {
+    .sidebar a {
+        text-decoration: none;
+        color: #000000;
+        padding: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        gap: 5px;
+        font-size: 31px;
+    }
+    .sidebar a:hover {
+        background-color: var(--btn-bg);
+        border-radius: 38%;
+    }
+    .btn-text {
+        display: inline;
+    }
 }
