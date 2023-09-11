@@ -7,6 +7,7 @@
     --card-bg: #0f1419;
     --new-bg: #f7f9f9;
     --bg-hover: #178cda;
+    --brown-color:#6e7880;
     overflow: auto;
 }
 
@@ -181,7 +182,7 @@ svg {
 
 .subscribe p {
     font-weight: 600;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .subscribe button {
@@ -189,7 +190,7 @@ svg {
     border-radius: 50px;
     font-size: 15px;
     font-weight: 600;
-    padding: 6px 13px;
+    padding: 8px 13px;
     border: none;
     color: #fff;
     background-color: var(--card-bg);
@@ -198,6 +199,57 @@ svg {
 
 .subscribe button:hover {
     background-color: #293540;
+}
+
+.trending {
+    background-color: var(--new-bg);
+    padding: 10px 0 0 0;
+}
+
+.trending h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    padding: 0 13px;
+}
+
+.trendcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 13px;
+    transition: 350ms;
+}
+
+.trendcard:hover {
+    background-color: var(--btn-bg);
+}
+
+.showtrend {
+    display: flex;
+    align-items: center;
+    padding: 10px 13px;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    transition: 350ms;
+}
+
+.showtrend p {
+    padding: 0;
+    margin: 0;
+}
+
+.showtrend:hover {
+    background-color: var(--btn-bg);
+}
+
+.trendcard h6 {
+    margin: 0;
+}
+
+.trendcard span {
+    font-size: 12px;
+    color: var(--brown-color);
 }
 
 @media only screen and (min-width: 1281px) {
