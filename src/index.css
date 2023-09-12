@@ -362,6 +362,35 @@ svg {
     object-fit: cover;
 }
 
+.verify {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-color);
+    font-size: 18px;
+}
+
+
+.wfooter span {
+    font-size: 13px;
+    cursor: pointer;
+    color: var(--brown-color);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.wfooter p {
+    color: var(--brown-color);
+    font-size: 13px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+
+.wfooter span:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (min-width: 1281px) {
     .menu {
         height: 100vh;
