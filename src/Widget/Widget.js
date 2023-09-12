@@ -1,3 +1,4 @@
+import FollowWidget from "./FollowWidget";
 import SubscribeCard from "./SubscribeCard";
 import Trending from "./Trending";
 import Search from "./search";
@@ -8,6 +9,7 @@ const Widget = () => {
       <Search />
       <SubscribeCard />
       <Trending />
+      <FollowWidget />
     </section>
   );
 };

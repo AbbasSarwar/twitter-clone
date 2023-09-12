@@ -8,6 +8,8 @@
     --new-bg: #f7f9f9;
     --bg-hover: #178cda;
     --brown-color:#6e7880;
+    --text-blue: #42abf2;
+    --light-blue: #b8d6e7;
     overflow: auto;
 }
 
@@ -15,11 +17,19 @@
     position: sticky;
     top: 0;
     right: 0;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+.widget::-webkit-scrollbar {
+    display: none;
+}
+
 .sidebar {
     position: sticky;
     overflow-y:scroll ;
@@ -96,7 +106,6 @@
 
 .icon {
    display: flex;
-   font-weight: bolder;
 }
 
 svg {
@@ -151,6 +160,14 @@ svg {
     background-color: var(--btn-bg);
 }
 
+.searchContainer {
+    background-color: #fff;
+    position: sticky;
+    top: -10px;
+    height: 100px;
+    padding: 10px 0;
+}
+
 .searchbar {
     width: 100%;
     padding: 5px 0;
@@ -169,7 +186,7 @@ svg {
 .subscribe {
     font-family: sans-serif;   
     display: flex;
-    padding: 10px 12px;
+    padding: 10px 13px;
     background-color: var(--new-bg);
     line-height: 20px;
 }
@@ -204,6 +221,7 @@ svg {
 .trending {
     background-color: var(--new-bg);
     padding: 10px 0 0 0;
+    cursor: pointer;
 }
 
 .trending h3 {
@@ -215,10 +233,10 @@ svg {
 
 .trendcard {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px 13px;
-    transition: 350ms;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 13px;
+    transition: 450ms;
 }
 
 .trendcard:hover {
@@ -231,7 +249,7 @@ svg {
     padding: 10px 13px;
     margin: 0;
     border-radius: 0 0 10px 10px;
-    transition: 350ms;
+    transition: 450ms;
 }
 
 .showtrend p {
@@ -245,11 +263,103 @@ svg {
 
 .trendcard h6 {
     margin: 0;
+    padding: 0;
 }
 
 .trendcard span {
     font-size: 12px;
+    font-family: 'Noto Sans JP', sans-serif;
     color: var(--brown-color);
+}
+
+.trend-last-more {
+    color: var(--text-blue);
+}
+
+.icon-trending {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    transition: 450ms;
+    margin-top: 10px;
+    color: #000000 !important;
+    margin: 0;
+}
+
+.icon-trending:hover {
+    background-color: var(--light-blue);
+    color: rgb(107, 107, 229) !important;
+}
+
+.followWidget {
+    background-color: var(--new-bg);
+    padding: 10px 0 0 0;
+    cursor: pointer;
+}
+
+.followWidget h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    padding: 0 13px;
+}
+
+.FollowCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 14px;
+}
+
+.FollowCard:hover {
+    background-color: var(--btn-bg);
+}
+
+.FollowCard button {
+    width: 80px;
+    height: 33px;
+     border-radius: 50px;
+     font-size: 15px;
+     font-weight: 600;
+     border: none;
+     color: #fff;
+    background-color: var(--card-bg);
+    transition: 350ms;
+}
+
+.FollowCard button:hover {
+    background-color: #282e36;
+}
+
+.FollowCard p {
+    margin: 0;
+    line-height: 20px;
+}
+
+.FollowCard .mini-card p:last-child {
+    color: var(--brown-color);
+    margin: 0;
+    padding: 0;
+}
+
+.FollowCard .profile-img {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.profile-img img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
 }
 
 @media only screen and (min-width: 1281px) {
