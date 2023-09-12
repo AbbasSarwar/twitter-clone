@@ -1,0 +1,44 @@
+{
+    "profile": {
+        "person1": {
+            "name": "Elon Musk",
+            "tag": "@elonmusk",
+            "verified": true,
+            "img": "https://cdn.pixabay.com/photo/2022/11/26/11/51/elon-musk-7617700_1280.jpg",
+            "tweets": [
+                {
+                    "id": 1,
+                    "tweet": "In the Special Theory of Relativity, Einstein determined that time is relative—in other words, the rate at which time passes depends on your frame of reference.",
+                    "impressions": [10, 15,30, 400 ],
+                    "time": "3h"
+                }
+            ]
+        },
+        "person2": {
+            "name": "Hert",
+            "tag": "@hert_dev",
+            "img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80",
+            "tweets": [
+                {
+                    "id": 1,
+                    "tweet": "Web developers create and maintain websites. They are also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle. In addition, web developers may create content for the site.",
+                    "impressions": [11, 25,10, 40 ],
+                    "time": "1d"
+                }
+            ]
+        },
+        "person3": {
+            "name": "Mark S",
+            "tag": "@markS7",
+            "img": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2680&q=80",
+            "tweets": [
+                {
+                    "id": 1,
+                    "tweet": "Well, there's still some work to be done on this app.",
+                    "impressions": [5, 11,32, 41 ],
+                    "time": "20m"
+                }
+            ]
+        }
+    }
+}

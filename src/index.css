@@ -9,7 +9,7 @@
     --bg-hover: #178cda;
     --brown-color:#6e7880;
     --text-blue: #42abf2;
-    --light-blue: #b8d6e7;
+    --light-blue: #c7dfed;
     overflow: auto;
 }
 
@@ -154,6 +154,10 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.rounded-border {
+    border-radius: 2px;
 }
 
 .box:hover {
@@ -371,6 +375,13 @@ svg {
     font-size: 18px;
 }
 
+.verified {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-color);
+    font-size: 18px;
+}
 
 .wfooter span {
     font-size: 13px;
@@ -385,11 +396,112 @@ svg {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-
-
 .wfooter span:hover {
     text-decoration: underline;
 }
+
+.PostContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 13px 5px 0;
+    cursor: pointer;
+}
+
+.post-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post-top h6 {
+    margin: 0;
+}
+
+.profiletweet {
+    padding: 6px 11px;
+}
+
+.post-time {
+    padding: 0 12px;
+}
+
+.post-more {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    transition: 450ms;
+}
+
+.post-more:hover {
+    background-color: var(--light-blue);
+    color: blue;
+}
+
+.tweet-body {
+    display: flex;
+    align-items: center;
+}
+
+.impressions {
+    color: var(--brown-color);
+}
+
+.impressions .btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    flex: 4;
+}
+
+.impressions .share-btns {
+    flex: 1;
+}
+
+.posticon {
+    font-size: 16px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    transition: 450ms;
+}
+
+.post-dgt {
+    font-size: 14px;
+}
+
+.btns:hover .p1{
+    color: var(--bg-color);
+    background-color: var(--light-blue);
+}
+
+.btns:hover .p2 {
+    background-color: #c6f4da;
+    color: #43d080;
+}
+
+.btns:hover .p3 {
+    background-color: #f6cfc8;
+    color:#ee2d0b;
+}
+
+.btns:hover .p4 {
+    color: var(--bg-color);
+    background-color: var(--light-blue);
+}
+
+.p5:hover {
+    color: var(--bg-color);
+    background-color: var(--light-blue);
+}
+
 
 @media only screen and (min-width: 1281px) {
     .menu {
