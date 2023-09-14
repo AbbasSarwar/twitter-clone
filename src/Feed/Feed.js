@@ -5,11 +5,11 @@ import Home from "./Home";
 import Progress from "./progress";
 import Compose from "./Compose";
 
-const Feed = () => {
+const Feed = ({setTweet, OpenTweet}) => {
     const dispatch = useDispatch();
 
     return (
-        <section className="feed col-md-6 col-xxl-5 border" onClick={() => dispatch(setFocus(false))}>
+        <section className="feed col-10 col-md-6 col-xxl-5 border" onClick={() => dispatch(setFocus(false))}>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/search' element={<Progress />} />
@@ -20,8 +20,8 @@ const Feed = () => {
                 <Route path='/profile' element={<Progress />} />
                 <Route path='/more' element={<Progress />} />
                 <Route path='/verified-choose' element={<Progress />} />
-                <Route path='/tweet' element={<Compose />} />
             </Routes>
+            <Compose OpenTweet={OpenTweet} setTweet={setTweet} />
         </section>
     )
 }
