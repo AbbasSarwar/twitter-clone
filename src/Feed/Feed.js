@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { setFocus } from "../reducer/focusReducer";
 import Home from "./Home";
 import Progress from "./progress";
+import Compose from "./Compose";
 
 const Feed = () => {
     const dispatch = useDispatch();
@@ -19,7 +20,7 @@ const Feed = () => {
                 <Route path='/profile' element={<Progress />} />
                 <Route path='/more' element={<Progress />} />
                 <Route path='/verified-choose' element={<Progress />} />
-                <Route path='/tweet' element={<Progress />} />
+                <Route path='/tweet' element={<Compose />} />
             </Routes>
         </section>
     )
