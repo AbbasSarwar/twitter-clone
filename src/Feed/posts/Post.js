@@ -3,7 +3,6 @@ import PostTop from "./PostTop";
 import Tweet from "./Tweet";
 
 const Post = ({ profile }) => {
-    console.log(profile);
   return (
     <div className="PostContainer border-bottom pb-1">
       <div className="profiletweet">

@@ -22,7 +22,7 @@ const TopBar = ({
           <span>{righticon2}</span>
         </div>
       </div>
-      <div className="d-flex flex-row">
+      <div className="d-flex flex-row pt-2">
         <div className="box d-flex justify-content-center align-items-center flex-fill w-100 fs-6 fw-semibold">
           <div className="d-flex align-items-center justify-content-center m-0 h-100 w-100"><p className="rounded-border border-bottom border-primary border-3 d-flex justify-content-center align-items-center h-100 mt-2">{bTitle1}</p></div>
         </div>

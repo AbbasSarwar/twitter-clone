@@ -2,7 +2,6 @@ import { FiMoreHorizontal } from "react-icons/fi";
 import { VscVerifiedFilled } from 'react-icons/vsc';
 
 const PostTop = ({profile}) => {
-  console.log(profile);
   return (
     <div className="post-top">
       <div className="d-flex flex-row justify-content-center align-items-center">
