@@ -17,11 +17,11 @@ const Sidebar = () => {
     <nav className="sidebar col-md-2 col-xxl-3 col-2" onClick={() => dispatch(setFocus(false))} >
       <div className="menu">
         <OptionMenu
-          dir="/home"
+          dir="/"
           text=""
           icon={<FaXTwitter />}
         />
-        <OptionMenu dir="/home" text="Home" icon={<BiHomeCircle />} />
+        <OptionMenu dir="/" text="Home" icon={<BiHomeCircle />} />
         <OptionMenu dir="/search" text="Explore" icon={<BiSearch />} />
         <OptionMenu dir="/notifications" text="Notifications" icon={<PiBellLight /> } />
         <OptionMenu dir="/messages" text="Messages" icon={<BiEnvelope />} />

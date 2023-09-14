@@ -11,7 +11,7 @@ const Feed = () => {
     return (
         <section className="feed col-md-6 col-xxl-5 border" onClick={() => dispatch(setFocus(false))}>
             <Routes>
-                <Route path='/home' element={<Home />} />
+                <Route path='/' element={<Home />} />
                 <Route path='/search' element={<Progress />} />
                 <Route path='/notifications' element={<Progress />} />
                 <Route path='/lists' element={<Progress />} />
