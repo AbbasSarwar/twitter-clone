@@ -676,7 +676,7 @@ svg {
         display: none;
     }
 
-    .tweet {
+    .last-icon {
         text-align: center;
     }
 
@@ -737,10 +737,19 @@ svg {
         background-color: #fff;
         z-index: 3;
         transition: 450ms;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-start ;
+        width: 100%;
     }
 
     .sidebar-toggle {
         left: 0;
+        top: 0;
     }
 
 
@@ -799,11 +808,91 @@ svg {
     .mobile-menu a {
         flex: 1;
         text-align: center;
-        color: #000000 !important;
         font-size: 22px;
+        color: #000000 !important;
     }
 
     .mobile {
         display: none !important;
     }
+
+    .textShow {
+        display: flex ;
+        flex-direction: row;
+        justify-content: flex-start !important;
+        border-radius: 1px !important;
+        width: 100% !important;
+    }
+
+    .sidebar a {
+        border-radius: 10px;
+    }
+
+    .sidebar a:hover {
+        background-color: var(--light-blue);
+        border-radius: 10px;
+    }
+
+    .last-icon {
+        border: 1px ;
+    }
+
+    .textShow svg {
+        width: 30px !important;
+    }
+
+    .mbhide {
+        display: flex;
+        color: #000000;
+    }
+
+    .showicon {
+        display: flex ;
+        position: fixed;
+        bottom: 80px;
+        right: 30px;
+        z-index: 999;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(66, 171, 242, 0.7);
+        fill: #fff;
+    }
+
+    .large_icon {
+        display: flex;
+        width: 10%;
+        font-size: 16px ;
+        gap: 5px;
+    }
+    .profile-mini {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        padding: 10px 4px;
+        gap: 2px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .profile-img .img {
+        width: 10px !important;
+        height: 10px;
+        overflow: hidden;
+    }
+
+    .large_icon p {
+        font-size: 10px;
+    }
+
+    .large_icon p:first-child{
+        font-size: 12px;
+    }
+
+    .nomobile {
+        display: none !important;
+    }
+
 }
