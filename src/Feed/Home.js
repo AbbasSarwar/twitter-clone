@@ -15,14 +15,11 @@ const Home = ({sidebar, setSidebar}) => {
       
       />
       <div className="d-flex flex-column">
-        <Post profile={profile.person1} />
-        <Post profile={profile.person2} />
-        <Post profile={profile.person3} />
-        <Post profile={profile.person3} />
-        <Post profile={profile.person3} />
-        <Post profile={profile.person3} />
-        <Post profile={profile.person3} />
-        <Post profile={profile.person3} />
+        <Post profile={profile.person1} tweet={profile.person1.tweets[0]} />
+        <Post profile={profile.person2} tweet={profile.person2.tweets[0]} />
+        <Post profile={profile.person3} tweet={profile.person3.tweets[0]} />
+        <Post profile={profile.person3} tweet={profile.person3.tweets[1]} />
+        <Post profile={profile.person3} tweet={profile.person3.tweets[2]} />
       </div>
     </section>
   );

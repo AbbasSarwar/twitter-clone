@@ -37,6 +37,18 @@
                     "tweet": "Well, there's still some work to be done on this app.",
                     "impressions": [5, 11,32, 41 ],
                     "time": "20m"
+                },
+                {
+                    "id": 2,
+                    "tweet": "Developers use various tools and integrated development environments (IDEs) to write, test, and debug code. Some popular tools include Visual Studio Code, IntelliJ IDEA, and PyCharm.",
+                    "impressions": [2, 8,18, 21 ],
+                    "time": "10m"
+                },
+                {
+                    "id": 3,
+                    "tweet": "Many developers work in teams, so effective communication and collaboration skills are essential. Tools like Slack and Jira are often used for project management and communication.",
+                    "impressions": [3, 9,19, 22 ],
+                    "time": "14m"
                 }
             ]
         }
