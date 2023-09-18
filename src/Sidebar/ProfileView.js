@@ -9,7 +9,7 @@ const ProfileView = () => {
       <div className="large_icon">
         <div className="d-flex flex-column justify-content-start gap-0 p-0 align-items-start">
           <p className="fw-semibold m-0">Abbas_sDev</p>
-          <p className="m-0">@Abbas_sDev</p>
+          <p className="m-0">@Abbas_sDev </p>
         </div>
         <div>
           <i className="fs-2">

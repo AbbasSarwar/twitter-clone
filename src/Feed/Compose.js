@@ -4,7 +4,7 @@ import { PiCaretDown } from "react-icons/pi";
 import data from "../Data.json";
 import ComposeBottom from "./ComposeBottom.js";
 import { useState } from "react";
-const Compose = ({setTweet, OpenTweet}) => {
+const Compose = ({ setTweet, OpenTweet }) => {
   const [text, setText] = useState("");
 
   const handleText = (e) => {
@@ -12,10 +12,13 @@ const Compose = ({setTweet, OpenTweet}) => {
   };
   const { profile } = data;
   return (
-    <section className={`compose ${OpenTweet? 'compose-display': ''}`}>
+    <section className={`compose ${OpenTweet ? "compose-display" : ""}`}>
       <div className="compose-card col-12 col-md-6">
         <div className="d-flex align-items-center justify-content-between">
-          <span className="fs-4 p-0 m-0 rounded-4 cross-tweet" onClick={()=> setTweet(!OpenTweet)}>
+          <span
+            className="fs-4 p-0 m-0 rounded-4 cross-tweet"
+            onClick={() => setTweet(!OpenTweet)}
+          >
             <IoCloseOutline />
           </span>
           <span className="m-0 rounded-icon">Drafts</span>
